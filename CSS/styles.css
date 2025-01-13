@@ -248,9 +248,10 @@ header .company-subname {
     border-radius: 5px;                       
     padding: 10px 20px;                       
     font-size: 1rem;                          
-    font-weight: bold;                        
+    font-weight: bold;
+    text-decoration: none;                     
     cursor: pointer;                          
-    transition: background-color 0.3s, box-shadow 0.3s; 
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .cta-btn:hover {
@@ -284,46 +285,6 @@ header .company-subname {
   margin: 0 auto 40px auto;
   line-height: 1.6;
 }
-
-/* Services Section */
-/* .services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.service-card {
-  background: var(--secondary-color);
-  padding: 20px;
-  border-radius: 10px;
-  width: 280px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.service-card i {
-  font-size: 2.5rem;
-  color: var(--accent-color);
-  margin-bottom: 10px;
-}
-
-.service-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: var(--neutral-light);
-}
-
-.service-card p {
-  font-size: 1rem;
-  color: var(--neutral-light);
-  line-height: 1.5;
-} */
 
 /* General Styling for About Us Section */
 .about {
