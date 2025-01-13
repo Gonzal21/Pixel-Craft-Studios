@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const newsContainer = document.getElementById("news-container");
   
     // Fetch news from JSON file
-    fetch("data/news.json")
+    fetch("Data/news.json")
       .then((response) => response.json())
       .then((data) => {
         // Clear the loading message
