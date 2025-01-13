@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - PixelCraft Studios</title>
+  <link rel="stylesheet" href="../CSS/lightbox.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"> -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+        <a href="index.html">
+            <!-- icon next to logo -->
+            <span class="pixel-icon">&#11035;</span> 
+            <span class="company-name">Pixel</span><span class="company-subname">Craft Studios</span>
+        </a>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="quote.html">Quote</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <div class="container">
+      <h1>Our Work</h1>
+      <div class="gallery-grid">
+        <a href="../images/gallery1.jpg" data-lightbox="gallery" data-title="Project 1">
+          <img src="../Images/gallery1-thumb.jpg" alt="Project 1">
+        </a>
+        <a href="../images/gallery2.jpg" data-lightbox="gallery" data-title="Project 2">
+          <img src="../images/gallery2-thumb.jpg" alt="Project 2">
+        </a>
+        <a href="../images/gallery3.jpg" data-lightbox="gallery" data-title="Project 3">
+          <img src="../images/gallery3-thumb.jpg" alt="Project 3">
+        </a>
+        <a href="../images/gallery4.jpg" data-lightbox="gallery" data-title="Project 4">
+          <img src="../images/gallery4-thumb.jpg" alt="Project 4">
+        </a>
+        <a href="../images/gallery5.jpg" data-lightbox="gallery" data-title="Project 5">
+          <img src="../images/gallery5-thumb.jpg" alt="Project 5">
+        </a>
+        <a href="../images/gallery6.jpg" data-lightbox="gallery" data-title="Project 6">
+          <img src="../images/gallery6-thumb.jpg" alt="Project 6">
+        </a>
+        <a href="../images/gallery7.jpg" data-lightbox="gallery" data-title="Project 7">
+          <img src="../images/gallery7-thumb.jpg" alt="Project 7">
+        </a>
+        <a href="../images/gallery8.jpg" data-lightbox="gallery" data-title="Project 8">
+          <img src="../images/gallery8-thumb.jpg" alt="Project 8">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 PixelCraft Studios</p>
+    <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+    <p>Address: 123 Creative Street, Design City</p>
+  </footer>
+
+  <!-- Lightbox JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/lightbox.js"></script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

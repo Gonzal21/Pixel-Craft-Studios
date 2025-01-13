@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - PixelCraft Studios</title>
+  <link rel="stylesheet" href="../CSS/lightbox.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+        <a href="index.html">
+            <span class="pixel-icon">&#11035;</span> 
+            <span class="company-name">Pixel</span><span class="company-subname">Craft Studios</span>
+        </a>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="quote.html" class="active">Quote</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="quote-section">
+        <h2 id="quote-heading">Request a Quote</h2>
+        <div class="quote-container">
+        <!-- Contact Information Section -->
+            <section id="contact-info">
+          <h3>Contact Information</h3>
+          <form id="contact-form" onsubmit="return validateContactForm()">
+              <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="15" required>
+                  <small class="error-message" id="name-error"></small>
+              </div>
+              <div class="form-group">
+                  <label for="surname">Surname:</label>
+                  <input type="text" id="surname" name="surname" placeholder="Enter your surname" maxlength="40" required>
+                  <small class="error-message" id="surname-error"></small>
+              </div>
+              <div class="form-group">
+                  <label for="phone">Phone:</label>
+                  <input type="text" id="phone" name="phone" placeholder="Enter your phone number" maxlength="9" required>
+                  <small class="error-message" id="phone-error"></small>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                  <small class="error-message" id="email-error"></small>
+              </div>
+              <button type="submit" class="btn-primary">Submit</button>
+          </form>
+            </section>
+        
+        <!-- Budget Options Section -->
+            <section class="budget-options">
+            <h3>Calculate Your Budget</h3>
+            
+            <!-- Product Selection -->
+            <label for="product">Choose a Product:</label>
+            <select id="product">
+                <option value="100">Website Design (€100)</option>
+                <option value="200">Mobile App Development (€200)</option>
+                <option value="150">SEO Services (€150)</option>
+            </select>
+            
+            <!-- Deadline Input -->
+            <label for="deadline">Delivery Deadline (in months):</label>
+            <input type="number" id="deadline" min="1" placeholder="Enter months">
+            
+            <!-- Extras -->
+            <fieldset>
+                <legend>Additional Services:</legend>
+                <label><input type="checkbox" value="50"> Priority Support (€50)</label><br>
+                <label><input type="checkbox" value="75"> Maintenance Plan (€75)</label><br>
+                <label><input type="checkbox" value="30"> Additional Revisions (€30)</label>
+            </fieldset>
+            
+            <!-- Budget Display -->
+            <div id="budget-display">
+                <strong>Total Budget:</strong> €<span id="total-budget">0</span>
+            </div>
+            </section>
+        </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 PixelCraft Studios</p>
+    <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+    <p>Address: 123 Creative Street, Design City</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../JS/lightbox.js"></script>
+  <script src="../JS/main.js"></script>
+
+</body>
+</html>

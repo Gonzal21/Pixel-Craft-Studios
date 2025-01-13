@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelCraft Studios</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+   <!-- Header Section -->
+   <header>
+    <div class="logo">
+        <a href="index.html">
+            <!-- icon next to logo -->
+            <span class="pixel-icon">&#11035;</span> 
+            <span class="company-name">Pixel</span><span class="company-subname">Craft Studios</span>
+        </a>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./Views/gallery.html">Gallery</a></li>
+            <li><a href="./Views/quote.html">Quote</a></li>
+            <li><a href="./Views/contact.html">Contact</a></li>
+        </ul>
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+   </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- <div class="hero-img">
+            <img src="Images/hero-image-background.jpg" alt="hero image">
+        </div> -->
+        <div class="hero-content">
+            <h1>Welcome to PixelCraft Studios</h1>
+            <p>Your creative partner for design and development services.</p>
+            <button href="contact.html" class="cta-btn">Get in Touch</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p class="about-description">
+            At <strong>PixelCraft Studios</strong>, we are passionate about creating unique and visually stunning designs that elevate your brand and captivate your audience.
+          </p>
+          <div class="services">
+            <div class="service-card">
+              <i class="fas fa-paint-brush"></i>
+              <h3>Creative Design</h3>
+              <p>Innovative designs that stand out and represent your brand identity.</p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-code"></i>
+              <h3>Web Development</h3>
+              <p>Modern and responsive websites tailored to your business needs.</p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-bullhorn"></i>
+              <h3>Marketing Solutions</h3>
+              <p>Effective strategies to grow your reach and impact.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- The Featured Services Section -->
+    <section id="featured-services" class="services-section">
+        <div class="container">
+          <h2>Our Services</h2>
+          <p class="services-description">
+            Explore our range of creative solutions designed to meet your needs.
+          </p>
+          <div class="services-grid">
+            <div class="service-card">
+              <i class="fas fa-desktop"></i>
+              <h3>Web Design</h3>
+              <p>Modern and responsive designs to bring your ideas to life.</p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-pencil-ruler"></i>
+              <h3>Brand Identity</h3>
+              <p>Crafting unique and memorable brand experiences.</p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-chart-line"></i>
+              <h3>Digital Marketing</h3>
+              <p>Effective strategies to drive growth and engagement.</p>
+            </div>
+          </div>
+        </div>
+    </section>      
+
+    <!-- News Section (Dynamically Loaded) -->
+    <section id="news-section" class="news">
+        <div class="container">
+          <h2>Latest News</h2>
+          <div id="news-container" class="news-grid">
+            <p class="loading-message">Loading news...</p>
+          </div>
+        </div>
+      </section>      
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 PixelCraft Studios</p>
+    <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+    <p>Address: 123 Creative Street, Design City</p>
+  </footer>
+
+  <script src="JS/news.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
